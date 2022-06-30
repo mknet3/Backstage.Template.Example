@@ -1,15 +1,10 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: docs-template
-  title: Documentation Template
-  description: Create a new standalone documentation project
-  tags:
-    - recommended
-    - techdocs
-    - mkdocs
+  name: empty-dir-and-file-in-sub-directories-produces-an-error
+  title: Empty dir and/or file in subFolders produces an error
 spec:
-  owner: backstage/techdocs-core
+  owner: mknet3
   type: documentation
 
   parameters:
@@ -30,13 +25,12 @@ spec:
 
   steps:
     - id: fetch
-      name: Template Docs Skeleton
+      name: Template Skeleton
       action: fetch:template
       input:
         url: ./skeleton
         values:
           name: ${{ parameters.name }}
           description: ${{ parameters.description }}
-          destination: ${{ parameters.repoUrl | parseRepoUrl }}
           owner: ${{ parameters.owner }}
           myCondition: ${{ parameters.myCondition }}
