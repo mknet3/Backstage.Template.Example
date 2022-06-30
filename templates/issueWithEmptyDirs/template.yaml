@@ -32,4 +32,4 @@ spec:
       name: Debug
       action: debug:log
       input:
-        listWorkspace: true
+        listWorkspace: ${{ parameters.myCondition }}
