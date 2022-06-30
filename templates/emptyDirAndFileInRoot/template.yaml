@@ -28,3 +28,9 @@ spec:
         values:
           name: ${{ parameters.name }}
           myCondition: ${{ parameters.myCondition }}
+    - id: debug
+      name: Debug
+      action: debug:log
+      input:
+        values:
+          listWorkspace: true
