@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: empty-dir-and-file-in-root
-  title: Empty dir and/or file in the root generate the file and folder correctly
+  title: Empty dir and/or file in the root
 spec:
   owner: mknet3
   type: documentation
