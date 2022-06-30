@@ -32,5 +32,4 @@ spec:
       name: Debug
       action: debug:log
       input:
-        values:
-          listWorkspace: true
+        listWorkspace: true
